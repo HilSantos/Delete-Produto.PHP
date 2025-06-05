@@ -2,6 +2,8 @@
 Criação do código do deleteproduto.php funcional para completar o CRUD no sistema.
 
 <?php
+include('segurancadez.php');
+include('cabecalho.php');
 include('conn.php');
 if($_SERVER['REQUEST_METHOD']=='POST'){
     $id = $_POST['id'];
